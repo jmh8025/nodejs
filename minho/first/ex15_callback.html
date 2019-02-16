@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ex15_callback</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        #box{
+            border : 1px solid red;
+            width  : 100px;
+            height : 100px;
+            background-color : yellow;
+            position:absolute;
+            top:100px;
+            left:0px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">Box</div>
+    <script>
+        var moveBox =(select,callback)=>{ 
+            var box = document.querySelector(select);
+            box.callback = callback;
+            //console.dir(box);
+            var x= 0;
+            var goal = 300;
+            var fn = setInterval(()=>{
+                x +=3;
+                box.style.left = x + 'px';
+                if(x >= goal){
+                    clearInterval(fn);
+                    box.callback(box);
+                }
+            },1000/30);
+        }
+        moveBox('#box',function(box){
+            // alert('동작완뇨');
+            box.style.backgroundColor = 'blue';
+            console.log(this);
+        });
+    </script>
+</body>
+</html>

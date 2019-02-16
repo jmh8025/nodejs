@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Page Title</title>
+<meta content="text/html; charset=utf-8">
+<style>
+    #box{
+        border : 1px solid red;
+        width: 100px;
+        height: 100px;
+        background: yellow;
+        position: absolute;
+        top: 100px;
+        left: 0px;
+
+    }
+</style>
+
+
+</head>
+<body>
+    <div id="box">BOX</div>
+    <script>
+        var moveBox = (selector, callback) => {
+            var box = document.querySelector(selector);
+            box.callback = callback;
+            var x= 0;
+            var goal = 400;
+            var fn = setInterval(function(){
+                x += 3;
+                box.style.left = x + "px";
+                if(x > goal){
+                    clearInterval(fn);
+                    box.callback(box);
+                }
+            }, 1000/30);
+        }
+        moveBox("#box", function(box){
+            box.style.backgroundColor = "green";
+            console.log(this);
+        });
+        
+    </script>        
+</body>
+</html>

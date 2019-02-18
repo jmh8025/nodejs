@@ -3,3 +3,11 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  button(class=title, type='submit') 전송
+  input(placeholder=title + ' 연습')
+  - var node = 'Node.js'
+  - var js = 'Javascript'
+  p #{node}와 #{js}
+  ul
+    each fruit in ['사과','배','오렌지','바나나','복숭아']
+      li=fruit

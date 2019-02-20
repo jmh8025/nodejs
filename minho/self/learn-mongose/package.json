@@ -1,5 +1,5 @@
 {
-  "name": "learn-sequelize",
+  "name": "learn-mongose",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -10,9 +10,8 @@
     "debug": "~2.6.9",
     "express": "~4.16.0",
     "http-errors": "~1.6.2",
+    "mongose": "0.0.2-security",
     "morgan": "~1.9.0",
-    "mysql2": "^1.5.3",
-    "pug": "2.0.0-beta11",
-    "sequelize": "^4.37.6"
+    "pug": "2.0.0-beta11"
   }
 }

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>calc_client.html</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <h1>NodeJS 웹 계산기</h1>    
+    <form method="POST">
+        <input type="text" name="num1" size="3">
+        <input type="text" name="num2" size="3">
+        <select name="op">
+            <option value="plus">plus</option>
+            <option value="minus">minus</option>
+            <option value="mult">mult</option>
+            <option value="div">div</option>
+        </select>
+        <input type="submit" value="확인!">
+        <hr>
+        <div id="res">결과 :<span></span> </div>
+    </form>
+
+    <script>
+        let form = document.forms[0];
+        form.onsubmit = function(){
+            event.preventDefault();
+
+            let num1 = this.num1.value;
+            let num2 = this.num2.value;
+            let op = this.op.value;
+            let url = "http://localhost:3000/"+op+"/"+num1+"/"+num2;
+
+            // Ajax 처리
+            let xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function(){
+                if(this.readyState==4 && this.status == 200){
+                    console.log(this.responseText);
+                    var resSpan = document.querySelector("#res span");
+                    resSpan.innerHTML = (this.responseText);
+
+                }
+            };
+            xhr.open("GET",url,true);
+            xhr.send();
+        };
+    </script>
+</body>
+</html>

@@ -4,6 +4,9 @@ const app = express();
 const static = require('serve-static');
 const path = require('path');
 const router = express.Router();
+const cors = require('cors');
+app.use(cors());
+//
 app.set('port',3000);
 
 app.use('/public',static(path.join(__dirname,'public')));

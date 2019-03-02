@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>차차차차차차차</title>
+</head>
+<body>
+    <h2>차목록</h2>
+    <hr>
+    <table border="1">
+        <% for(car of carList) { %>
+        <tr>
+            <td><a href="/car_find?name=<%=car.name %>"><%=car.name %></a></td>
+            <td><%=car.price %></td>
+            <td><%=car.company %></td>
+            <td><%=car.year %></td>
+        </tr>
+        <% } %>
+    </table>
+
+</body>
+</html>

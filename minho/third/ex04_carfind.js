@@ -28,6 +28,21 @@ console.log(app.get('views'));
 app.use('/public',static(path.join(__dirname,'public')));
 
 
+function carFind(db,carName,callback){
+    var car = db.collection('car');
+    car.find({name:carName}).toArray((err,result)=>{
+        if(err){
+            callback(err,null);
+        }else{
+            callback(null,result);
+        }
+    });
+}
+
+
+
+
+
 router.route('/car_list').get((req,res)=>{
     console.log('car_list요청됨');
     var car = db.collection('car');
@@ -48,6 +63,21 @@ router.route('/car_list').get((req,res)=>{
         })
     });
     
+});
+
+router.route('/car_find').get((req,res)=>{
+    console.log('/car_find 요청됨');
+    var carName = req.query.name;
+    carFind(db,carName,(err,result)=>{
+        var car = {car:result[0]};
+        req.app.render('car_detail',car,(err,html)=>{
+            if(err){
+                console.log('ejs렌더링 에러',err);
+                return;
+            }
+            res.end(html);
+        });
+    });
 });
 
 app.use('/',router);

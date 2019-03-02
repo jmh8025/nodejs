@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex15_callback</title>
+    <style>
+
+#box {
+
+width: 100px;
+
+height: 100px;
+
+border: 1px solid red;
+
+background: yellow;
+
+position: absolute;
+
+top: 100px;
+
+left: 0px;
+
+}
+
+</style>
+</head>
+<body>
+    <div id="box">Box</div>
+    
+    <script>
+        //  제공받은 라이브러리
+    var moveBox = function(select,callback){    
+    var box = document.querySelector(select);
+    //console.dir(box);
+    box.callback = callback; //  콜백함수를 할당받는다.
+        var x = 0;
+        var goal = 400;
+        var fn = setInterval(function(){
+            x += 3;
+            box.style.left = x + 'px';
+            if(x>= goal){
+                clearInterval(fn);
+                //box.style.backgroundColor = 'blue';
+                box.callback(box);
+            }
+        },1000/30);
+    }
+    
+    moveBox('#box',function(box){
+       // alert('동작완료');
+        
+        //box.style.backgroundColor = 'blue';
+          this.style.backgroundColor = 'blue';
+        console.log(this);
+    });
+    </script>
+    
+</body>
+</html>
+
+

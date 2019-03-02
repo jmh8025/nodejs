@@ -6,4 +6,5 @@ console.log('사용준인 메모리 : %d',os.totalmem() - os.freemem());
 console.log('시스템의 CPU정보 : \n', os.cpus());
 console.log('시스템의 네트워크 인터페이스 정보\n');
 console.dir(os.networkInterfaces());
+console.log('tt');
 

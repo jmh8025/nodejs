@@ -1,15 +1,26 @@
 //ex02_mongodb.js
 //npm i mongodb
+//npm i mongodb@3.1.13
 
-var mongojs = require("mongojs");
-var db = mongojs("vehicle", ['car']);
+//mongoClient 가져오기
 
-db.car.save({"name" : "485 Italia", "price" : 45000, "company" : "FERRARI", "year" : 2015});
+var mongoClient = require("mongodb").MongoClient;
 
-db.car.find({name : "M4"}, {_id : false},function(err, data){
-    console.log(data);
-});
-
-db.car.find({}, {_id : false},function(err, data){
-    console.log(data);
+mongoClient.connect("mongodb://localhost", function(err, client){
+    if(err){
+        console.log(err);
+        throw err;
+    }
+    //mongodb module v3 방식
+    //mongodb module v2 에서는 dbURL 뒤에 db명을 붙인다
+    var db = client.db("vehicle");
+    var car = db.collection("car");
+    car.findOne({}, function(findErr, result){
+        if(findErr){
+            console.log(findErr);
+            throw findErr;
+        }
+        console.log(result.name);
+        client.close();
+    });
 });

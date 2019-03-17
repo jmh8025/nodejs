@@ -4,14 +4,15 @@
   "private": true,
   "dependencies": {
     "cross-env": "^5.2.0",
+    "query-string": "^6.4.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-router-dom": "^4.4.0",
     "react-scripts": "2.1.8"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "cross-env NODE_PATH=src react-scripts start",
+    "build": "cross-env NODE_PATH=src react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

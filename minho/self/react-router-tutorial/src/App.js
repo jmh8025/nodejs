@@ -1,11 +1,20 @@
 import React from 'react';
+import { Route } from 'react-router-dom';
+
+import{
+    Home,
+    About
+} from 'pages';
+import Menu from './component/Menu'
 
 const App = () => {
     return (
         <div>
-                리액트 라우터를 배워봅시다.
+                <Menu/>
+                <Route exact path="/" component={Home}/>
+                <Route path="/about/:name?" component={About}/>
         </div>
-    )
-}
+    );
+};
 
 export default App;

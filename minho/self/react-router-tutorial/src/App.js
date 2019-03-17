@@ -5,7 +5,7 @@ import{
     Home,
     About
 } from 'pages';
-import Menu from './component/Menu'
+import Menu from './components/Menu'
 
 const App = () => {
     return (

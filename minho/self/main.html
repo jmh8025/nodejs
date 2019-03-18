@@ -1,15 +1,170 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-    <iframe 
-title="down load file frame" 
-id="DataDownFrame2" 
-src="./test.html"></iframe>
-</body>
-</html>
+<script>
+$(function(){
+    
+    $('#tabContent02').hide();
+    $('#tab01').click(function(){
+    $('#tab01').addClass("on");$('#tabContent01').show();
+    $('#tab02').removeClass("on");$('#tabContent02').hide();
+});
+$('#tab02').click(function(){
+    $('#tab01').removeClass("on");$('#tabContent01').hide();
+    $('#tab02').addClass("on");$('#tabContent02').show();
+});
+});
+</script>
+	
+	
+	
+<div class="ay_univ_mu">
+    <ul> 
+    
+        <li id="tab01" class="on chk_button" style="cursor:pointer">
+            <a><span>카멜레존</span></a>	
+        </li>
+    
+        <li id="tab02" class="chk_button" style="cursor:pointer">
+            <a><span>체력단련실</span></a>	
+        </li>
+        
+        <li id="tab03" class="chk_button" style="cursor:pointer">
+            <a><span>세탁실</span></a>	
+        </li>
+        
+        <li id="tab04" class="chk_button" style="cursor:pointer">
+            <a><span>휴게실</span></a>	
+        </li>
+        
+        <li id="tab05" class="chk_button" style="cursor:pointer">
+            <a><span>무인 택배 시스템</span></a>	
+        </li>
+    </ul>
+</div>
+    
+<!--카멜레존-->
+<div class="cp-info" id="_tab01">
+    <ul class="cp-list">
+        <li>
+            <h4>위치 및 시설</h4>
+            <p class="new_contents">기숙사동 2층 카멜레존</p>
+        </li>
+        <li>
+            <h4>이용시간</h4>
+            <p class="new_contents">평일 및 주말(07:00 ~ 23:00)</p>
+        </li>
+        <li>
+            <h4>이용대상</h4>
+            <p class="new_contents">부천대학교 몽당기숙사생</p>
+        </li>		
+        <li>
+            <h4>구비물품</h4>
+            <p class="new_contents">최신PC 8대, 전자레인지 2대, 토스트기 2대</p> 
+        </li>
+        <li>
+            <h4>이용문의</h4>
+            <p class="new_contents">몽당기숙사 운영 사무실 : 032) 610-8470~1</p>
+        </li>
+    </ul>
+</div>
+<!--카멜레존 끝-->
+
+<!--체력단련실-->
+<div class="cp-info" id="_tab02" style="display: none;">
+    <ul class="cp-list">
+        <li>
+            <h4>위치 및 시설</h4>
+            <p class="new_contents">기숙사동 2층 체력단련실</p>
+        </li>
+        <li>
+            <h4>이용시간</h4>
+            <p class="new_contents">평일 및 주말(06:00 ~ 23:00)</p>
+        </li>
+        <li>
+            <h4>이용대상</h4>
+            <p class="new_contents">부천대학교 몽당기숙사 학생</p>
+        </li>		
+        <li>
+            <h4>주의사항</h4>
+            <p class="new_contents">운동 전 준비운동 필수</p> 
+            <p class="new_contents">기구 사용법 숙지 후 운동</p>
+            <p class="new_contents">본인체력에 맞는 운동 실시</p>
+            <p class="new_contents">기구 사용 후 자리 정돈 필수</p>
+        </li>
+        <li>
+            <h4>이용문의</h4>
+            <p class="new_contents">몽당기숙사 운영 사무실 : 032) 610-8470~1</p>
+    </li></ul>
+</div>
+<!--체력단련실 끝-->
+
+<!--세탁실-->
+<div class="cp-info" id="_tab03" style="display: none;">
+    <ul class="cp-list">
+        <li>
+            <h4>위치 및 시설</h4>
+            <p class="new_contents">기숙사동 3·6·9층</p>
+        </li>
+        <li>
+            <h4>이용시간</h4>
+            <p class="new_contents">평일 및 주말(08:00 ~ 23:00)</p>
+        </li>
+        <li>
+            <h4>이용대상</h4>
+            <p class="new_contents">부천대학교 몽당기숙생</p>
+        </li>		
+        <li>
+            <h4>이용금액</h4>
+            <p class="new_contents">세탁기 및 건조기 각 1,000원/회</p> 
+            <p class="new_contents">다미리 무료</p>
+        </li>
+        <li>
+            <h4>구비물품</h4>
+            <p class="new_contents">세탁기, 건조기, 다리미, 다리미판</p>
+    </li></ul>
+</div>
+<!--세탁실 끝-->
+
+<!--휴게실-->
+<div class="cp-info" id="_tab04" style="display: none;">
+    <ul class="cp-list">
+        <li>
+            <h4>위치 및 시설</h4>
+            <p class="new_contents">기숙사동 4·5·7·8·10·11층</p>
+        </li>
+        <li>
+            <h4>이용시간</h4>
+            <p class="new_contents">평일 및 주말(09:00 ~ 23:00)</p>
+        </li>
+        <li>
+            <h4>이용대상</h4>
+            <p class="new_contents">부천대학교 몽당기숙사생</p>
+        </li>		
+        <li>
+            <h4>구비물품</h4>
+            <p class="new_contents">테이블, 정수기</p> 
+        </li>
+        <li>
+            <h4>이용문의</h4>
+            <p class="new_contents">몽당기숙사 운영 사무실 : 032) 610-8470~1</p>
+    </li></ul>
+</div>
+<!--휴게실 끝-->
+
+<!--무인 택배 시스템-->
+<div class="cp-info" id="_tab05" style="display: none;">
+    <ul class="cp-list">
+        <li>
+            <h4>위치 및 시설</h4>
+            <p class="new_contents">기숙사동 지하 1층(CU편의점 옆)</p>
+        </li>
+        <li>
+            <h4>이용시간</h4>
+            <p class="new_contents">24시간 개방</p>
+        </li>
+        <li>
+            <h4>이용문의</h4>
+            <p class="new_contents">몽당기숙사 운영 사무실 : 032) 610-8470~1</p>
+    </li></ul>
+</div>
+<!--무인 택배 시스템 끝-->
+	
+	

@@ -1,170 +1,92 @@
-<script>
-$(function(){
-    
-    $('#tabContent02').hide();
-    $('#tab01').click(function(){
-    $('#tab01').addClass("on");$('#tabContent01').show();
-    $('#tab02').removeClass("on");$('#tabContent02').hide();
-});
-$('#tab02').click(function(){
-    $('#tab01').removeClass("on");$('#tabContent01').hide();
-    $('#tab02').addClass("on");$('#tabContent02').show();
-});
-});
+
+<style>
+  @media screen and (min-width: 1100px){
+  .founder_in {
+    padding: 20px 4% 0 0;
+  }
+  }
+</style>
+
+
+ <script>
+
+  $('.end').parent().parent().remove();
+
 </script>
-	
-	
-	
-<div class="ay_univ_mu">
-    <ul> 
+  
+
     
-        <li id="tab01" class="on chk_button" style="cursor:pointer">
-            <a><span>카멜레존</span></a>	
-        </li>
-    
-        <li id="tab02" class="chk_button" style="cursor:pointer">
-            <a><span>체력단련실</span></a>	
-        </li>
-        
-        <li id="tab03" class="chk_button" style="cursor:pointer">
-            <a><span>세탁실</span></a>	
-        </li>
-        
-        <li id="tab04" class="chk_button" style="cursor:pointer">
-            <a><span>휴게실</span></a>	
-        </li>
-        
-        <li id="tab05" class="chk_button" style="cursor:pointer">
-            <a><span>무인 택배 시스템</span></a>	
-        </li>
-    </ul>
-</div>
-    
-<!--카멜레존-->
-<div class="cp-info" id="_tab01">
-    <ul class="cp-list">
-        <li>
-            <h4>위치 및 시설</h4>
-            <p class="new_contents">기숙사동 2층 카멜레존</p>
-        </li>
-        <li>
-            <h4>이용시간</h4>
-            <p class="new_contents">평일 및 주말(07:00 ~ 23:00)</p>
-        </li>
-        <li>
-            <h4>이용대상</h4>
-            <p class="new_contents">부천대학교 몽당기숙사생</p>
-        </li>		
-        <li>
-            <h4>구비물품</h4>
-            <p class="new_contents">최신PC 8대, 전자레인지 2대, 토스트기 2대</p> 
-        </li>
-        <li>
-            <h4>이용문의</h4>
-            <p class="new_contents">몽당기숙사 운영 사무실 : 032) 610-8470~1</p>
-        </li>
-    </ul>
-</div>
-<!--카멜레존 끝-->
+<!--독립운동가시작-->
+    <div class="founder">
+      <div class="founder_in">
+          <strong id="spacing3">구국운동에 헌신한 독립운동가<br><em>- 몽당(夢堂) 한항길선생</em></strong><b>
+          </b>부천대학교의 설립자 몽당(蒙堂) 한항길(韓恒吉) 선생(1897~1979)은 1897년 8월 15일 인천에서 태어나 ‘한민족의 복을 일으켜 세우라’는 뜻으로 조부가 ‘흥리(興履)’라고 이름을 지어주었다.<br>
+          유년기부터 한학에 조예가 깊은 조부 밑에서 국가와 민족을 위하는 유교적 가치관과 정의감을 몸에 익히며 성장했다. 고등학교 2학년때인 1919년 3월 1일 탑골공원에서 열린 독립만세운동에 참가한 뒤 시흥역과 안양역, 군포역 등지에서 <br>
+          시민들에게 독립선언서를 나누어주며 만세 삼창을 외치고 시가행진을 주도하다 경찰에 체포되어 서대문형무소에서 3년간 옥고를 치렀다. <br>
+          몽당 선생은 옥중에서도 독립의지를 굽히지 않았고 새로운 세상에 대한 꿈을 키운다는 의미의 몽당(蒙堂)이라는 호도 이때 얻게 되었다. <br>
+          그 뒤 연초영업소에서 근무하던 그는 광복을 맞은 1945년 경기 안양시에 안양직물주식회사를 차려 기업운영에 나섰다.
+          평생 양복 한벌로 살 만큼 근검절약을 실천했던 선생은 부모에 대한 지극한 효심으로 1948년 정부가 주는 효자상을 받기도 했다.
+          1990년 3.1운동에 참여한 공훈으로 건국훈장 애족장이 추서되었으며 국립대전현충원 애국지사묘역에 안장됐다.<br>
+          1999년 부천시는 그를 부천을 빛낸인물로 선정한 뒤 시청 앞 중앙공원에 전신상을 건립했다.
+  
+          <p style="padding: 5px 0 5px 0;">몽당 한항길선생 육성듣기 (1970년 후반 행사중에서)</p>
+          <a class="btnTypeH w95" href="http://www.bc.ac.kr/resource/image/intro/intro.mp3" target="_blank"><span class="icon13 mR8B4"></span>듣기</a>
+      </div>
+  </div>
 
-<!--체력단련실-->
-<div class="cp-info" id="_tab02" style="display: none;">
-    <ul class="cp-list">
-        <li>
-            <h4>위치 및 시설</h4>
-            <p class="new_contents">기숙사동 2층 체력단련실</p>
-        </li>
-        <li>
-            <h4>이용시간</h4>
-            <p class="new_contents">평일 및 주말(06:00 ~ 23:00)</p>
-        </li>
-        <li>
-            <h4>이용대상</h4>
-            <p class="new_contents">부천대학교 몽당기숙사 학생</p>
-        </li>		
-        <li>
-            <h4>주의사항</h4>
-            <p class="new_contents">운동 전 준비운동 필수</p> 
-            <p class="new_contents">기구 사용법 숙지 후 운동</p>
-            <p class="new_contents">본인체력에 맞는 운동 실시</p>
-            <p class="new_contents">기구 사용 후 자리 정돈 필수</p>
-        </li>
-        <li>
-            <h4>이용문의</h4>
-            <p class="new_contents">몽당기숙사 운영 사무실 : 032) 610-8470~1</p>
-    </li></ul>
-</div>
-<!--체력단련실 끝-->
+  <br><br>
+  <iframe width="940" height="518" src="https://www.youtube.com/embed/JahGI71-wO0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <br><br>
+  <ul class="intro_list2"  style="font-family: Nanum Gothic">
+      <li>투옥기록<img alt="투옥기록" src="/src/images/intro/founder1.jpg"></li>
+      <li>판결문<img alt="판결문" src="/src/images/intro/founder2.jpg"></li>
+      <li>건국훈장애족장<img alt="건국훈장애족장" src="/src/images/intro/founder3.jpg"></li>
+  </ul>		  
+<!--독립운동가 끝-->
+<br><br><br><br><br>
 
-<!--세탁실-->
-<div class="cp-info" id="_tab03" style="display: none;">
-    <ul class="cp-list">
-        <li>
-            <h4>위치 및 시설</h4>
-            <p class="new_contents">기숙사동 3·6·9층</p>
-        </li>
-        <li>
-            <h4>이용시간</h4>
-            <p class="new_contents">평일 및 주말(08:00 ~ 23:00)</p>
-        </li>
-        <li>
-            <h4>이용대상</h4>
-            <p class="new_contents">부천대학교 몽당기숙생</p>
-        </li>		
-        <li>
-            <h4>이용금액</h4>
-            <p class="new_contents">세탁기 및 건조기 각 1,000원/회</p> 
-            <p class="new_contents">다미리 무료</p>
-        </li>
-        <li>
-            <h4>구비물품</h4>
-            <p class="new_contents">세탁기, 건조기, 다리미, 다리미판</p>
-    </li></ul>
-</div>
-<!--세탁실 끝-->
 
-<!--휴게실-->
-<div class="cp-info" id="_tab04" style="display: none;">
-    <ul class="cp-list">
-        <li>
-            <h4>위치 및 시설</h4>
-            <p class="new_contents">기숙사동 4·5·7·8·10·11층</p>
-        </li>
-        <li>
-            <h4>이용시간</h4>
-            <p class="new_contents">평일 및 주말(09:00 ~ 23:00)</p>
-        </li>
-        <li>
-            <h4>이용대상</h4>
-            <p class="new_contents">부천대학교 몽당기숙사생</p>
-        </li>		
-        <li>
-            <h4>구비물품</h4>
-            <p class="new_contents">테이블, 정수기</p> 
-        </li>
-        <li>
-            <h4>이용문의</h4>
-            <p class="new_contents">몽당기숙사 운영 사무실 : 032) 610-8470~1</p>
-    </li></ul>
-</div>
-<!--휴게실 끝-->
+<!--교육자-->
+    <!-- <dl class="dtddTypeA">
+      <dt>나라의 발전을 위해 몸 바친 공업인과 교육인</dt><dt>
+      </dt><dd>감옥에서 풀려난 선생은 후진을 양성하는 교육이 중요하다는 판단아래 교육자의 길을 선택하고 1928년까지 교편을 잡았다. 이후 선생은 1948년 8월 15일 대한민국 정부가 정식으로 수립되자 이를 기념하여 본명을 ‘흥리(興履)’에서 ‘항길(恒吉)’로 개명하며 ‘대한민국이 항상 길하라’라는 민족적 염원과 국가의 발전에 헌신하겠다는 의지를 다졌다. 그 해 선생은 국가 경제가 자립해야만 나라의 진정한 독립이 가능하다는 판단아래 공업인의 길을 가겠다고 결심하고 경기도 안양시에 안양직물주식회사를 차려 기업운영을 시작했다. 6.25전쟁이 끝나고 난 후 나라의 경제를 부흥시키기 위해서는 산업체와 숙련된 기술자가 필요하다는 판단아래 1958년 소사공업기술학교(현 부천대학교의 전신)를 설립하였다. 바른마음, 바른생각, 바른언행을 정심운동을 교육의 핵심으로 ‘사람다운 사람’을 양성하기 위해 학생 지도에 힘을 쏟았다. </dd>
+  </dl> -->
+  
+  <h4>나라의 발전을 위해 몸 바친 공업인과 교육인</h4>
+  <span class="new_contents">감옥에서 풀려난 선생은 후진을 양성하는 교육이 중요하다는 판단아래 교육자의 길을 선택하고 1928년까지 교편을 잡았다. 이후 선생은 1948년 8월 15일 대한민국 정부가 정식으로 수립되자 이를 기념하여 본명을 ‘흥리(興履)’에서 ‘항길(恒吉)’로 개명하며 ‘대한민국이 항상 길하라’라는 민족적 염원과 국가의 발전에 헌신하겠다는 의지를 다졌다. 그 해 선생은 국가 경제가 자립해야만 나라의 진정한 독립이 가능하다는 판단아래 공업인의 길을 가겠다고 결심하고 경기도 안양시에 안양직물주식회사를 차려 기업운영을 시작했다. 6.25전쟁이 끝나고 난 후 나라의 경제를 부흥시키기 위해서는 산업체와 숙련된 기술자가 필요하다는 판단아래 1958년 소사공업기술학교(현 부천대학교의 전신)를 설립하였다. 바른마음, 바른생각, 바른언행을 정심운동을 교육의 핵심으로 ‘사람다운 사람’을 양성하기 위해 학생 지도에 힘을 쏟았다. <br><br></span>
 
-<!--무인 택배 시스템-->
-<div class="cp-info" id="_tab05" style="display: none;">
-    <ul class="cp-list">
-        <li>
-            <h4>위치 및 시설</h4>
-            <p class="new_contents">기숙사동 지하 1층(CU편의점 옆)</p>
-        </li>
-        <li>
-            <h4>이용시간</h4>
-            <p class="new_contents">24시간 개방</p>
-        </li>
-        <li>
-            <h4>이용문의</h4>
-            <p class="new_contents">몽당기숙사 운영 사무실 : 032) 610-8470~1</p>
-    </li></ul>
-</div>
-<!--무인 택배 시스템 끝-->
-	
-	
+
+  <div class="dotline h40"></div>
+  
+  <ul class="intro_list">
+      <li>개교기념식<img src="/src/images/intro/ed1.jpg" alt="개교기념식"></li>
+      <li>실습지도모습<img src="/src/images/intro/ed2.jpg" alt="실습지도모습"></li>
+      <li class="end">집무장면<img src="/src/images/intro/ed3.jpg" alt="집무장면"></li>
+  </ul>		  
+<!--교육자 끝-->
+<br><br><br><br><br>
+
+<!--부천사랑 시작-->
+<h4>우리의 가슴속에 영원히 남을 참 교육자</h4>
+<span class="new_contents">평생 양복 한 벌로 살 만큼 근검절약을 실천했던 선생은 부모에 대한 지극한 효심으로 1948년 정부가 주는 선행자 표창과 효자상을 받았다. 몽당 선생은 많은 업적을 뒤로 한 채 부천공업전문대학이 개교한지 2개월 후인 1979년 5월 8일 향년 83세로 영면에 들었다. 이후 1990년, 3.1운동에 참여한 공훈으로 건국훈장 애족장에 추서되어 국립대전현충원 애국지사묘역에 안장됐다. 
+            1995년 8·15 기념일에는 안양시청이 자유공원에 선생의 동상을 건립해 유업을 기렸으며, 1999년 10월 1일에는 부천시를 빛낸 사람으로 선정되어 부천시민의 날을 기념해 영정 제막식이 열리고 2002년 6월 10일에는 부천 중앙공원에 선생의 추모공원이 건립 되었다. <br><br></span>
+    </dl>
+</dl>
+  
+  <div class="dotline h40"></div>
+  
+  <ul class="intro_list">
+      <li>관련기사<img src="/src/images/intro/person1.jpg" alt="관련기사"></li>
+      <li>부천시민의 날 기념 행사(시청로비)<img src="/src/images/intro/person2.jpg" alt="부천시민의 날 기념 행사(시청로비)"></li>
+      <li class="end">추모공원(중앙공원)<img src="https://www.bc.ac.kr/common/attachfile/attachfileView.do?attachNo=00014973" alt="추모공원(중앙공원)"></li>
+  </ul>		
+<!--부천사랑 끝-->
+
+<script>
+       var agent = navigator.userAgent.toLowerCase();
+       if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
+         $("#spacing3").css('letter-spacing','-3px')
+       }else {
+         
+       }
+       </script>
